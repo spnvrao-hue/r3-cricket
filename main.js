@@ -1,5 +1,1 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import App from './App.js';
-createRoot(document.getElementById('root')).render(React.createElement(React.StrictMode, null,
-    React.createElement(App, null)));
+document.getElementById('year').textContent=new Date().getFullYear();const menu=document.getElementById('menu'),nav=document.getElementById('nav');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}));
