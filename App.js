@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { ArrowDown, ArrowRight, ArrowUpRight, CalendarDays, CheckCircle2, ChevronRight, CircleDot, Clock3, ExternalLink, Globe2, Instagram, Mail, MapPin, Menu, Shield, Trophy, Users, X, } from 'lucide-react';
-import { featuredMatch, players, principles, team, upcomingMatches } from './data/siteData.js';
+import { featuredMatch, players, principles, team, upcomingMatches } from './siteData.js';
 function Brand({ light = false }) {
     return (React.createElement("a", { href: "#home", className: `brand ${light ? 'brand-light' : ''}`, "aria-label": "R3 Cricket home" },
         React.createElement("span", { className: "brand-mark" },
